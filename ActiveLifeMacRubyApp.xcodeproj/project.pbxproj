@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0AAA867152E20760068BABC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AAA866152E20760068BABC /* Cocoa.framework */; };
+		D0AAA869152E20760068BABC /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AAA868152E20760068BABC /* MacRuby.framework */; };
+		D0AAA870152E20760068BABC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0AAA86E152E20760068BABC /* InfoPlist.strings */; };
+		D0AAA872152E20760068BABC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAA871152E20760068BABC /* main.m */; };
+		D0AAA877152E20770068BABC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0AAA875152E20770068BABC /* MainMenu.xib */; };
+		D0AAA87A152E20770068BABC /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = D0AAA879152E20770068BABC /* rb_main.rb */; };
+		D0AAA87C152E20770068BABC /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = D0AAA87B152E20770068BABC /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0AAA862152E20760068BABC /* ActiveLifeMacRubyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiveLifeMacRubyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0AAA866152E20760068BABC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D0AAA868152E20760068BABC /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		D0AAA86D152E20760068BABC /* ActiveLifeMacRubyApp-Info.plist */ = {isa = PBXFileReference; path = "ActiveLifeMacRubyApp-Info.plist"; sourceTree = "<group>"; };
+		D0AAA86F152E20760068BABC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0AAA871152E20760068BABC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0AAA873152E20760068BABC /* ActiveLifeMacRubyApp-Prefix.pch */ = {isa = PBXFileReference; path = "ActiveLifeMacRubyApp-Prefix.pch"; sourceTree = "<group>"; };
+		D0AAA876152E20770068BABC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D0AAA879152E20770068BABC /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		D0AAA87B152E20770068BABC /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0AAA85F152E20760068BABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AAA867152E20760068BABC /* Cocoa.framework in Frameworks */,
+				D0AAA869152E20760068BABC /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0AAA857152E20760068BABC = {
+			isa = PBXGroup;
+			children = (
+				D0AAA86B152E20760068BABC /* ActiveLifeMacRubyApp */,
+				D0AAA865152E20760068BABC /* Frameworks */,
+				D0AAA863152E20760068BABC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0AAA863152E20760068BABC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0AAA862152E20760068BABC /* ActiveLifeMacRubyApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0AAA865152E20760068BABC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0AAA866152E20760068BABC /* Cocoa.framework */,
+				D0AAA868152E20760068BABC /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0AAA86B152E20760068BABC /* ActiveLifeMacRubyApp */ = {
+			isa = PBXGroup;
+			children = (
+				D0AAA87B152E20770068BABC /* AppDelegate.rb */,
+				D0AAA874152E20770068BABC /* Resources */,
+				D0AAA878152E20770068BABC /* Other Sources */,
+				D0AAA86C152E20760068BABC /* Supporting Files */,
+			);
+			path = ActiveLifeMacRubyApp;
+			sourceTree = "<group>";
+		};
+		D0AAA86C152E20760068BABC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0AAA86D152E20760068BABC /* ActiveLifeMacRubyApp-Info.plist */,
+				D0AAA86E152E20760068BABC /* InfoPlist.strings */,
+				D0AAA871152E20760068BABC /* main.m */,
+				D0AAA873152E20760068BABC /* ActiveLifeMacRubyApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0AAA874152E20770068BABC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0AAA875152E20770068BABC /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D0AAA878152E20770068BABC /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D0AAA879152E20770068BABC /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		D0AAA86A152E20760068BABC /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = D0AAA882152E20770068BABC /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		D0AAA861152E20760068BABC /* ActiveLifeMacRubyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0AAA87F152E20770068BABC /* Build configuration list for PBXNativeTarget "ActiveLifeMacRubyApp" */;
+			buildPhases = (
+				D0AAA85E152E20760068BABC /* Sources */,
+				D0AAA85F152E20760068BABC /* Frameworks */,
+				D0AAA860152E20760068BABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActiveLifeMacRubyApp;
+			productName = ActiveLifeMacRubyApp;
+			productReference = D0AAA862152E20760068BABC /* ActiveLifeMacRubyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0AAA859152E20760068BABC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D0AAA85C152E20760068BABC /* Build configuration list for PBXProject "ActiveLifeMacRubyApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0AAA857152E20760068BABC;
+			productRefGroup = D0AAA863152E20760068BABC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0AAA861152E20760068BABC /* ActiveLifeMacRubyApp */,
+				D0AAA86A152E20760068BABC /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0AAA860152E20760068BABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AAA870152E20760068BABC /* InfoPlist.strings in Resources */,
+				D0AAA877152E20770068BABC /* MainMenu.xib in Resources */,
+				D0AAA87A152E20770068BABC /* rb_main.rb in Resources */,
+				D0AAA87C152E20770068BABC /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0AAA85E152E20760068BABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AAA872152E20760068BABC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0AAA86E152E20760068BABC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0AAA86F152E20760068BABC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D0AAA875152E20770068BABC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0AAA876152E20770068BABC /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0AAA87D152E20770068BABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D0AAA87E152E20770068BABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D0AAA880152E20770068BABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActiveLifeMacRubyApp/ActiveLifeMacRubyApp-Prefix.pch";
+				INFOPLIST_FILE = "ActiveLifeMacRubyApp/ActiveLifeMacRubyApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D0AAA881152E20770068BABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActiveLifeMacRubyApp/ActiveLifeMacRubyApp-Prefix.pch";
+				INFOPLIST_FILE = "ActiveLifeMacRubyApp/ActiveLifeMacRubyApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D0AAA883152E20770068BABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D0AAA884152E20770068BABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0AAA85C152E20760068BABC /* Build configuration list for PBXProject "ActiveLifeMacRubyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AAA87D152E20770068BABC /* Debug */,
+				D0AAA87E152E20770068BABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0AAA87F152E20770068BABC /* Build configuration list for PBXNativeTarget "ActiveLifeMacRubyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AAA880152E20770068BABC /* Debug */,
+				D0AAA881152E20770068BABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0AAA882152E20770068BABC /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AAA883152E20770068BABC /* Debug */,
+				D0AAA884152E20770068BABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0AAA859152E20760068BABC /* Project object */;
+}
