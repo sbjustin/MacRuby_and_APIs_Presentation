@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D08BAE7A1536394C00A8C802 /* EventsDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = D08BAE791536394C00A8C802 /* EventsDelegate.rb */; };
 		D0AAA867152E20760068BABC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AAA866152E20760068BABC /* Cocoa.framework */; };
 		D0AAA869152E20760068BABC /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AAA868152E20760068BABC /* MacRuby.framework */; };
 		D0AAA870152E20760068BABC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0AAA86E152E20760068BABC /* InfoPlist.strings */; };
@@ -17,13 +18,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D08BAE791536394C00A8C802 /* EventsDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = EventsDelegate.rb; sourceTree = "<group>"; };
 		D0AAA862152E20760068BABC /* ActiveLifeMacRubyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiveLifeMacRubyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AAA866152E20760068BABC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D0AAA868152E20760068BABC /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
-		D0AAA86D152E20760068BABC /* ActiveLifeMacRubyApp-Info.plist */ = {isa = PBXFileReference; path = "ActiveLifeMacRubyApp-Info.plist"; sourceTree = "<group>"; };
+		D0AAA86D152E20760068BABC /* ActiveLifeMacRubyApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActiveLifeMacRubyApp-Info.plist"; sourceTree = "<group>"; };
 		D0AAA86F152E20760068BABC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0AAA871152E20760068BABC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D0AAA873152E20760068BABC /* ActiveLifeMacRubyApp-Prefix.pch */ = {isa = PBXFileReference; path = "ActiveLifeMacRubyApp-Prefix.pch"; sourceTree = "<group>"; };
+		D0AAA873152E20760068BABC /* ActiveLifeMacRubyApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ActiveLifeMacRubyApp-Prefix.pch"; sourceTree = "<group>"; };
 		D0AAA876152E20770068BABC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D0AAA879152E20770068BABC /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		D0AAA87B152E20770068BABC /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
@@ -72,9 +74,10 @@
 			isa = PBXGroup;
 			children = (
 				D0AAA87B152E20770068BABC /* AppDelegate.rb */,
-				D0AAA874152E20770068BABC /* Resources */,
 				D0AAA878152E20770068BABC /* Other Sources */,
+				D0AAA874152E20770068BABC /* Resources */,
 				D0AAA86C152E20760068BABC /* Supporting Files */,
+				D08BAE791536394C00A8C802 /* EventsDelegate.rb */,
 			);
 			path = ActiveLifeMacRubyApp;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				D0AAA877152E20770068BABC /* MainMenu.xib in Resources */,
 				D0AAA87A152E20770068BABC /* rb_main.rb in Resources */,
 				D0AAA87C152E20770068BABC /* AppDelegate.rb in Resources */,
+				D08BAE7A1536394C00A8C802 /* EventsDelegate.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 				D0AAA881152E20770068BABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0AAA882152E20770068BABC /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -331,6 +336,7 @@
 				D0AAA884152E20770068BABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
