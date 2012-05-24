@@ -3,7 +3,7 @@
 #  ActiveLifeMacRubyApp
 #
 #  Created by Justin Nash on 4/5/12.
-#  Copyright 2012 __MyCompanyName__. All rights reserved.
+#  Copyright 2012 __SimplyBinary__. All rights reserved.
 #
 HOST = "localhost"
 HOST_PORT = "3000"
@@ -22,21 +22,7 @@ class AppDelegate
    
     def clear_main_text(sender)
         main_text.string= ""
-    end
-    
-    def login(sender)
-        uri = URI('http://'+HOST+':'+HOST_PORT+'/users/sign_in')
         
-        req = Net::HTTP::Get.new(uri.request_uri)
-        req.body = {
-            "user" => {
-            "email" => "kirk@example.com", #username.stringValue,
-            "password" => "password123" #userpass.stringValue
-            }
-        }.to_json
-        res = Net::HTTP.new(uri.host, uri.port).start {|http| http.request(req) }
-        main_text.string = res.header.to_s + res.body
-
     end
     
 end

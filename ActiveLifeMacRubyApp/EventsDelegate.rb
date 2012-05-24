@@ -3,7 +3,7 @@
 #  ActiveLifeMacRubyApp
 #
 #  Created by Justin Nash on 4/5/12.
-#  Copyright 2012 __MyCompanyName__. All rights reserved.
+#  Copyright 2012 __SimplyBinary__. All rights reserved.
 #
 
 class EventsDelegate
@@ -19,7 +19,7 @@ class EventsDelegate
         uri = URI('http://'+HOST+':'+HOST_PORT+'/events')
         
         req = Net::HTTP::Post.new(uri.request_uri, initheader = {'Content-Type' =>'application/json'})
-        req.basic_auth 'kirk@example.com', 'password123'
+        req.basic_auth username.stringValue, userpass.stringValue#'kirk@example.com', 'password123'
         req.body = {
             "event" => {
                 "street" => new_event_street.stringValue,
@@ -37,7 +37,7 @@ class EventsDelegate
                 
     end
     
-    def get_events_with_ruby(sender)        
+    def get_events_with_ruby(sender)
         uri = URI('http://'+HOST+':'+HOST_PORT+'/events')
         
         req = Net::HTTP::Get.new(uri.request_uri)
@@ -53,10 +53,6 @@ class EventsDelegate
         events_table.reloadData
     end
     
-    #Events Table
-    
-    #@data = []
-    #@symlinkTableView.dataSource = self
     
     def numberOfRowsInTableView(aTableView)
         @event_json.size
@@ -99,7 +95,8 @@ class EventsDelegate
             http.request(req)
         }
         main_text.string = res.header.to_s + res.body
-
+        #get_events_with_ruby("just-because")
+        
     end
     
     
