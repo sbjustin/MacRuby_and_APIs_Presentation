@@ -90,7 +90,7 @@ class EventsDelegate
         uri = URI('http://'+HOST+':'+HOST_PORT+'/events/' + @event_json[@table_selected_row]['id'])
         
         req = Net::HTTP::Delete.new(uri.request_uri,initheader = {'Depth' => 'Infinity'})
-        req.basic_auth 'kirk@example.com', 'password123'
+        req.basic_auth username.stringValue, userpass.stringValue#'kirk@example.com', 'password123'
         res = Net::HTTP.start(uri.host, uri.port) {|http|
             http.request(req)
         }
